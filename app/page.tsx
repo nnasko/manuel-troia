@@ -90,7 +90,7 @@ export default function Home() {
           onClick={() => setTimeRange(id)}
           className={`text-xs tracking-[0.1em] py-2 px-4 rounded-sm transition-colors ${
             timeRange === id 
-              ? 'bg-white/10 text-white' 
+              ? 'bg-white/10 text-white ' 
               : 'text-white/50 hover:text-white/70'
           }`}
           whileHover={{ scale: 1.05 }}
