@@ -231,8 +231,8 @@ export default function Home() {
             <Image
               src="/manuel.jpg"
               alt="Manuel Troia"
-              width={150}
-              height={150}
+              width={200}
+              height={200}
               className="grayscale contrast-125 mx-auto"
               style={{
                 clipPath: 'polygon(0 15%, 15% 0, 85% 0, 100% 15%, 100% 85%, 85% 100%, 15% 100%, 0 85%)'
