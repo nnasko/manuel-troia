@@ -15,6 +15,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Manuel Troia",
   description: "Manuel Troia's personal site",
+  icons: {
+    icon: '/logo.avif',
+  },
 };
 
 export default function RootLayout({
