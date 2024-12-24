@@ -150,7 +150,7 @@ export default function Home() {
               <motion.div
                 key={track.id}
                 whileHover={{ scale: 1.01 }}
-                className="group flex items-center gap-4 p-4 bg-white/[0.02] backdrop-blur-sm"
+                className="group flex items-center gap-4 p-4 bg-black/40 backdrop-blur-sm"
                 style={{
                   clipPath: 'polygon(0 0, 98% 0, 100% 50%, 98% 100%, 0 100%, 2% 50%)'
                 }}
@@ -164,10 +164,10 @@ export default function Home() {
                   />
                 </div>
                 <div className="min-w-0 px-2">
-                  <p className="text-sm tracking-wider text-white/90 truncate">
+                  <p className="text-sm tracking-wider text-white truncate">
                     {track.name}
                   </p>
-                  <p className="text-xs tracking-wider text-white/50 truncate">
+                  <p className="text-xs tracking-wider text-white/70 truncate">
                     {track.artists.map(a => a.name).join(', ')}
                   </p>
                 </div>
@@ -182,12 +182,12 @@ export default function Home() {
               <motion.div
                 key={genre}
                 whileHover={{ scale: 1.02 }}
-                className="relative p-6 bg-white/[0.02] backdrop-blur-sm text-center"
+                className="relative p-6 bg-black/40 backdrop-blur-sm text-center"
                 style={{
                   clipPath: 'polygon(10% 0, 90% 0, 100% 50%, 90% 100%, 10% 100%, 0 50%)'
                 }}
               >
-                <p className="text-lg tracking-[0.2em] text-white/70 uppercase">
+                <p className="text-lg tracking-[0.2em] text-white uppercase">
                   {genre}
                 </p>
               </motion.div>
