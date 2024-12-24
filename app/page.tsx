@@ -25,9 +25,9 @@ type TabType = 'artists' | 'tracks' | 'genres';
 type TimeRange = 'short_term' | 'medium_term' | 'long_term';
 
 const socialIcons = {
-  youtube: Youtube,
-  instagram: Instagram,
-  spotify: Music2,
+  youtube: { icon: Youtube, url: 'https://www.youtube.com/@Manuel_cx' },
+  instagram: { icon: Instagram, url: 'https://www.instagram.com/manuel.cx__' },
+  tiktok: { icon: Music2, url: 'https://www.tiktok.com/@manuel.cx_' },
 };
 
 const tabs: { id: TabType; label: string; icon: React.ReactElement }[] = [
@@ -270,10 +270,12 @@ export default function Home() {
           transition={{ delay: 0.5 }}
           className="flex justify-center gap-12 mb-16"
         >
-          {Object.entries(socialIcons).map(([platform, Icon]) => (
+          {Object.entries(socialIcons).map(([platform, { icon: Icon, url }]) => (
             <motion.a
               key={platform}
-              href={`https://${platform}.com/manueltroia`}
+              href={url}
+              target="_blank"
+              rel="noopener noreferrer"
               whileHover={{ scale: 1.1 }}
               className="opacity-50 hover:opacity-100 transition-opacity duration-300"
             >
